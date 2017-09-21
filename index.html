@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <section id="image">
+        <div class="image-settings">
+            paste in input img url.
+            <input id="image-url" type="text" value="https://i.ytimg.com/vi/qh7LLydY8eo/maxresdefault.jpg">
+            <button id="load">load</button>
+            <button id="delete">delete</button>
+        </div>
+        <div id="local-storage">
+            <button id="load-in-ls">Put in local storage</button>
+            <button id="load-from-ls">Load from local storage</button>
+            <button id="clear-ls">Clear local storage</button>
+        </div>
+    </section>
+        <section id="canvas-wrapper">
+            <canvas id='canvas'></canvas>
+            <div class="size-settings">
+                width
+                <input id="line-width" type="range" min="0" max="300" step="1">
+                height
+                <input id="line-height" type="range" min="0" max="150" step="1">
+            </div>
+        </section>
+    <section id="colors">
+        <div class="color-settings">
+            <p>
+                <span class="color">Red</span>
+                0<input id="red" class="range" type="range" min="0" max="255" step="1">255
+                <input id="digital-red" class="range" type="text">
+            </p>
+            <p>
+                <span class="color">Green</span>
+                0<input id="green" class="range" type="range" min="0" max="255" step="1">255
+                <input id="digital-green" class="range" type="text">
+            </p>
+            <p>
+                <span>Blue</span>
+                0<input id="blue" class="range" type="range" min="0" max="255" step="1">255
+                <input id="digital-blue" class="range" type="text">
+            </p>
+            <p>
+                <span>Alpha</span>
+                0<input id="alpha" class="range" type="range" min="0" max="1" step=".1">1
+                <input id="digital-alpha" class="range" type="text">
+            </p>
+        </div>
+    </section>
+<script src="build/app.bundle.js"></script>
+</body>
+</html>
